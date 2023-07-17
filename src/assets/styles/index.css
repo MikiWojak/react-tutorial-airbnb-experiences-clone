@@ -24,10 +24,23 @@ body {
 }
 
 .hero {
-    padding: 25px 36px;
+    display: flex;
+    flex-direction: column;
 }
 
-.hero--photo-grid {
-    display: flex;
-    
+.hero--photo {
+    max-width: 400px;
+    align-self: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero--padding {
+    margin-bottom: 16px;
+}
+
+.hero--text {
+    margin-top: 0;
 }
