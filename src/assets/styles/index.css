@@ -46,46 +46,31 @@ section {
 }
 
 .card {
-    max-width: 235px;
+    max-width: 175px;
+    font-size: 12px;
+    color: #222;
+
 }
 
-.card--photo_status {
-    /* position: relative; */
-    /* top: 5px; */
-    /* left: 5px; */
-    text-transform: uppercase;
-    border-radius: 2px;
-    background: #FFF;
-    padding: 5px;
-    /* z-index: 100; */
-}
-
-.card--photo_img {
-    display: block;
+.card--image{
+    width: 100%;
     border-radius: 9px;
 }
 
-.card--rating {
+.card--stats {
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
-.card--rating,
-.card--description,
-.card--price {
-    color: #222;
-    font-size: 12px;
-}
-
-.card--rating_star {
+.card--stats_star {
     height: 14px;
 }
 
-.card--rating_grade {
+.card--stats_grade {
     margin-left: 2px;
 }
 
-.card--rating_info {
+.gray {
     color: #918E9B;
 }

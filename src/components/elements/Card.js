@@ -5,26 +5,24 @@ import katieZaferes from '../../assets/images/katie-zaferes.png'
 
 const Card = () => {
     return (
-        <section className="card">
-            <div className="card--photo">
-                <img src={katieZaferes} alt="katie zaferes" className="card--photo_img" />
-                <div className="card--photo_status">Sold out</div>
+        <div className="card">
+            <img src={katieZaferes} alt="katie zaferes" className="card--image" />
+
+            <div className="card--stats">
+                <img src={star} alt="katie zaferes" className="card--stats_star" />
+                <span className="card--stats_grade">5.0</span>
+                <span className="gray">(6) &bull;</span>
+                <span className="gray">USA</span>
             </div>
 
-            <div className="card--rating">
-                <img src={star} alt="katie zaferes" className="card--rating_star" />
-                <span className="card--rating_grade">5.0</span>
-                <span className="card--rating_info">(6) USA</span>
-            </div>
-
-            <div className="card--description">
+            <p className="card--description">
                 Life lessons with Katie Zaferes
-            </div>
+            </p>
 
-            <div className="card--price">
+            <p className="card--price">
                 <b>From $136</b> / person
-            </div>
-        </section>
+            </p>
+        </div>
     )
 }
 
