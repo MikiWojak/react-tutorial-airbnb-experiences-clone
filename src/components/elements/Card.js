@@ -11,7 +11,7 @@ const Card = () => {
             <div className="card--stats">
                 <img src={star} alt="star" />
                 <span className="card--stats_grade">5.0</span>
-                <span className="gray">(6) &bull;</span>
+                <span className="gray">(6) &bull; </span>
                 <span className="gray">USA</span>
             </div>
 
