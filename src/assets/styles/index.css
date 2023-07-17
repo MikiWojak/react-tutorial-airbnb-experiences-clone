@@ -22,3 +22,12 @@ body {
 .navbar--logo {
     max-width: 100px;
 }
+
+.hero {
+    padding: 25px 36px;
+}
+
+.hero--photo-grid {
+    display: flex;
+    
+}
