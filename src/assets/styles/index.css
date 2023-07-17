@@ -44,3 +44,48 @@ section {
 .hero--text {
     margin-top: 0;
 }
+
+.card {
+    max-width: 235px;
+}
+
+.card--photo_status {
+    /* position: relative; */
+    /* top: 5px; */
+    /* left: 5px; */
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #FFF;
+    padding: 5px;
+    /* z-index: 100; */
+}
+
+.card--photo_img {
+    display: block;
+    border-radius: 9px;
+}
+
+.card--rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card--rating,
+.card--description,
+.card--price {
+    color: #222;
+    font-size: 12px;
+}
+
+.card--rating_star {
+    height: 14px;
+}
+
+.card--rating_grade {
+    margin-left: 2px;
+}
+
+.card--rating_info {
+    color: #918E9B;
+}
