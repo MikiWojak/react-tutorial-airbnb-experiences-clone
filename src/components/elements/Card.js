@@ -1,26 +1,34 @@
 import React from 'react'
 
 import star from '../../assets/images/star.png'
-import katieZaferes from '../../assets/images/katie-zaferes.png'
 
-const Card = () => {
+const Card = (props) => {
+    const {
+        img,
+        rating,
+        reviewCount,
+        country,
+        title,
+        price
+    } = props
+
     return (
         <div className="card">
-            <img src={katieZaferes} alt="katie zaferes" className="card--image" />
+            <img src={img} alt={title} className="card--image" />
 
             <div className="card--stats">
                 <img src={star} alt="star" />
-                <span className="card--stats_grade">5.0</span>
-                <span className="gray">(6) &bull; </span>
-                <span className="gray">USA</span>
+                <span className="card--stats_grade">{rating}</span>
+                <span className="gray">({reviewCount}) &bull; </span>
+                <span className="gray">{country}</span>
             </div>
 
             <p className="card--description">
-                Life lessons with Katie Zaferes
+                {title}
             </p>
 
             <p className="card--price">
-                <b>From $136</b> / person
+                <b>From ${price}</b> / person
             </p>
         </div>
     )
