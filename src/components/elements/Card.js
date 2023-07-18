@@ -14,6 +14,9 @@ const Card = (props) => {
 
     return (
         <div className="card">
+            {/* //@DEPRECATED This one won't work at the moment! */}
+            {/* <img src={`../../assets/images/${img}`} alt={title} className="card--image" /> */}
+            
             <img src={img} alt={title} className="card--image" />
 
             <div className="card--stats">
