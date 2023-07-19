@@ -1,9 +1,29 @@
 import React from 'react'
 
+import Hero from './components/layout/Hero'
+import Card from './components/elements/Card'
+import Navbar from './components/layout/Navbar'
+
+import cardsData from './data'
+
 const App = () => {
+    const cards = cardsData.map(item => {
+        return (
+            <Card
+                key={item.id}
+                {...item}
+            />
+        )
+    })
+
     return (
         <div>
-            <h1>Hello React!</h1>
+            <Navbar />
+            <Hero />
+            
+            <section className="cards--list">
+                {cards}
+            </section>
         </div>
     )
 }
