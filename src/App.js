@@ -9,6 +9,7 @@ import cardsData from './data'
 const App = () => {
     const cards = cardsData.map(card => {
         const {
+            id,
             coverImg,
             stats: { rating, reviewCount },
             location,
@@ -18,6 +19,7 @@ const App = () => {
 
         return (
             <Card
+                key={id}
                 img={coverImg}
                 rating={rating}
                 reviewCount={reviewCount}
