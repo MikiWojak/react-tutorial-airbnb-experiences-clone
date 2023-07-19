@@ -15,6 +15,7 @@ const App = () => {
             location,
             title,
             price,
+            openSpots,
         } = card
 
         return (
@@ -23,9 +24,10 @@ const App = () => {
                 img={coverImg}
                 rating={rating}
                 reviewCount={reviewCount}
-                country={location}
+                location={location}
                 title={title}
                 price={price}
+                openSpots={openSpots}
             />
         )
     })

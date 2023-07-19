@@ -53,6 +53,8 @@ section {
 }
 
 .card {
+    position: relative;
+
     max-width: 175px;
     font-size: 12px;
     color: #222;
@@ -92,4 +94,14 @@ section {
 
 .card--price {
     margin-top: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: #fff;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }

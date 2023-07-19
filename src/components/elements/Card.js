@@ -7,20 +7,30 @@ const Card = (props) => {
         img,
         rating,
         reviewCount,
-        country,
+        location,
         title,
-        price
+        price,
+        openSpots
     } = props
+
+    let badgeText
+
+    if (openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (location === "Online") {
+        badgeText = "ONLINE"
+    }
 
     return (
         <div className="card">
+            {badgeText && <div className="card--badge">{badgeText}</div>}
             <img src={`./images/${img}`} alt={title} className="card--image" />
             
             <div className="card--stats">
                 <img src={star} alt="star" />
                 <span className="card--stats_grade">{rating}</span>
                 <span className="gray">({reviewCount}) &bull; </span>
-                <span className="gray">{country}</span>
+                <span className="gray">{location}</span>
             </div>
 
             <p className="card--description">
