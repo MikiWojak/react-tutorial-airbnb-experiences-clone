@@ -4,13 +4,17 @@ import star from '../../assets/images/star.png'
 
 const Card = (props) => {
     const {
-        img,
-        rating,
-        reviewCount,
-        location,
-        title,
-        price,
-        openSpots
+        item: {
+            coverImg,
+            stats: {
+                rating,
+                reviewCount
+            },
+            location,
+            title,
+            price,
+            openSpots
+        }
     } = props
 
     let badgeText
@@ -24,7 +28,7 @@ const Card = (props) => {
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={`./images/${img}`} alt={title} className="card--image" />
+            <img src={`./images/${coverImg}`} alt={title} className="card--image" />
             
             <div className="card--stats">
                 <img src={star} alt="star" />

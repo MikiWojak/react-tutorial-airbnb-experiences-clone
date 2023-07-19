@@ -7,27 +7,11 @@ import Navbar from './components/layout/Navbar'
 import cardsData from './data'
 
 const App = () => {
-    const cards = cardsData.map(card => {
-        const {
-            id,
-            coverImg,
-            stats: { rating, reviewCount },
-            location,
-            title,
-            price,
-            openSpots,
-        } = card
-
+    const cards = cardsData.map(item => {
         return (
             <Card
-                key={id}
-                img={coverImg}
-                rating={rating}
-                reviewCount={reviewCount}
-                location={location}
-                title={title}
-                price={price}
-                openSpots={openSpots}
+                key={item.id}
+                item={item}
             />
         )
     })
